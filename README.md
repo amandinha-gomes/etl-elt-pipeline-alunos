@@ -1,7 +1,7 @@
 # 📊 Pipeline de Dados — ETL & ELT com Python e SQL
 
 ## 🔍 Visão Geral
-Este projeto demonstra a construção de um pipeline de dados completo, aplicando conceitos de ETL (Extract, Transform, Load) e ELT (Extract, Load, Transform) utilizando Python, SQL e SQLite.<br>
+Este projeto demonstra a construção de um pipeline de dados completo, aplicando conceitos de **ETL (Extract, Transform, Load)** e **ELT (Extract, Load, Transform)** utilizando Python, SQL e SQLite.<br>
 O objetivo é simular um cenário real de engenharia e análise de dados, desde a ingestão de dados brutos até a geração de análises e visualizações consolidadas em um mini dashboard.
 
 ## 🧱 Estrutura do Projeto
@@ -14,13 +14,14 @@ O objetivo é simular um cenário real de engenharia e análise de dados, desde 
 - graficos.py
 - dashboard.py
 - database.db
-- dashboard_alunos.png
+- dashboard_alunos_pronto.png
 
 ## ⚙️ Tecnologias Utilizadas
 
 - Python
-- SQL (SQLite)
 - Pandas
+- SQLite
+- SQL (queries analíticas)
 - Matplotlib
 - VS Code
 
@@ -35,15 +36,7 @@ O objetivo é simular um cenário real de engenharia e análise de dados, desde 
 - Transformações aplicadas diretamente via SQL
 - Criação de tabela analítica final (alunos_elt)
 
-## ✅ Validação de Dados
-O projeto conta com um script de validação que verifica:
-
-- Valores nulos
-- Idades fora do intervalo esperado
-- Rendas inválidas
-- Consistência geral dos dados
-
-## 📈 Análises SQL
+## 📈 Análises Realizadas (SQL)
 As análises incluem:
 
 - Quantidade de alunos por curso
@@ -51,14 +44,36 @@ As análises incluem:
 - Renda média por curso
 
 - Distribuição por faixa etária
+  
+- Distribuição de alunos por sexo
 
-- Idade média geral dos alunos
+- Renda média por sexo
 
-- Todas as consultas são realizadas via SQL e integradas ao Python.
+- Idade média por sexo
 
-### 📊 Mini Dashboard
+Todas as consultas são realizadas via SQL e integradas ao Python.
 
-O projeto finaliza com um mini dashboard analítico, reunindo os principais indicadores do pipeline:
+### 📊 Dashboard Analítico
+
+O projeto gera um dashboard consolidado com os principais indicadores:
+
+- 📌 Quantidade de alunos por curso
+
+- 💰 Renda média por curso
+
+- 👥 Distribuição por faixa etária
+
+- ⚧️ Distribuição por sexo
+
+O dashboard é salvo automaticamente como imagem `(dashboard_alunos_pronto.png).`
+
+## ✅ Validação de Dados
+O projeto conta com um script de validação que verifica:
+
+- Valores nulos
+- Idades fora do intervalo esperado
+- Rendas inválidas
+- Consistência geral dos dados
 
 ## 🎯 Objetivo do Projeto
 
@@ -74,12 +89,3 @@ Demonstrar domínio prático em:
 
 - Organização de projetos de dados
 
-### 🚀 Próximos Passos
-
-- Versionar o banco para PostgreSQL
-
-- Criar dashboard interativo (Streamlit)
-
-- Simular dados temporais
-
-- Automatizar o pipeline
